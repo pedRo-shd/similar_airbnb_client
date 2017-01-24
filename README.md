@@ -14,4 +14,4 @@
 * Testando a integração
 * Criando Header e Footer e injetando o Layout
 * Controle de acesso
-* Criando a estrutura da Home
+* Criando a estrutura do Component Home

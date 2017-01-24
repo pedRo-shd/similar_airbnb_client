@@ -9,7 +9,7 @@
 * Criando o Primeiro Service para conversar com o CRUD (Properties)
 * Testando junto com a API Rails
 
-###M2-Autenticação, Integração, Autorização, Header, Footer e Home
+###M1-Autenticação, Integração, Autorização, Header, Footer e Home
 * Autenticação
 * Testando a integração
 * Criando Header e Footer e injetando o Layout

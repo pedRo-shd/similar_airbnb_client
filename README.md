@@ -22,3 +22,9 @@
 * Criando o component Results e integrando ele com o método de busca
 * Criando os components Search, filter e pagination
 * Criando os components property-box e Map
+
+###M4-Adequando o Service Property Detail para receber todas as informações
+* Criando os components Property Details + Adequando o Service Properties para receber os dados da propriedade
+* Criando os components lightbox e reservation box
+* Criando os components Comment Box e User Resume Box
+* Criando o component modal Send Message + Incluindo Map Box

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { DropdownModule, AlertModule, ButtonsModule, DatepickerModule, CollapseModule, ModalModule, PaginationModule} from "ng2-bootstrap/ng2-bootstrap";
+import { CarouselModule, DropdownModule, AlertModule, ButtonsModule, DatepickerModule, CollapseModule, ModalModule, PaginationModule} from "ng2-bootstrap/ng2-bootstrap";
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
@@ -23,6 +23,12 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
 import { PropertyBoxComponent } from './shared/property-box/property-box.component';
 import { MapComponent } from './shared/map/map.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { PropertyDetailsComponent } from './property/property-details/property-details.component';
+import { ReservationBoxComponent } from './shared/reservation-box/reservation-box.component';
+import { LightboxComponent } from './shared/lightbox/lightbox.component';
+import { CommentBoxComponent } from './shared/comment-box/comment-box.component';
+import { UserDetailBoxComponent } from './shared/user-detail-box/user-detail-box.component';
+import { SendMessageComponent } from './shared/send-message/send-message.component';
 
 
 @NgModule({
@@ -39,7 +45,13 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     FilterComponent,
     PaginationComponent,
     PropertyBoxComponent,
-    MapComponent
+    MapComponent,
+    PropertyDetailsComponent,
+    ReservationBoxComponent,
+    LightboxComponent,
+    CommentBoxComponent,
+    UserDetailBoxComponent,
+    SendMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +63,8 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     CollapseModule,
     DatepickerModule.forRoot(),
     PaginationModule.forRoot(),
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyALOWSS_LH5z4i0JkMBZsNZD8FgeJBPWnM'
     })

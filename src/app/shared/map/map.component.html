@@ -12,7 +12,7 @@
       [iconUrl]="m.icon">
 
     <sebm-google-map-info-window>
-      <a href="/property/id" target="_blank">
+      <a href="" target="_blank" [routerLink]="['/property', m.id]">
         <div>
           <div>
             <img src="{{ m.photo }}" class="map_pin">

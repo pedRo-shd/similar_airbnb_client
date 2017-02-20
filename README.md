@@ -28,3 +28,10 @@
 * Criando os components lightbox e reservation box
 * Criando os components Comment Box e User Resume Box
 * Criando o component modal Send Message + Incluindo Map Box
+
+###M5-Auto Complete, Wishilist e Home DinâM1-Autentica
+* Incluir Auto Complete
+* Integrando a Wishlist
+* Criando o Service User
+* Incluindo Avaliação no Service Property
+* Preenchendo Home Dinâmica

@@ -13,6 +13,11 @@ export class PropertiesService {
 
   constructor(private http: Http) { }
 
+  autocomplete(){
+  return this.http.get(environment.api_base_url + 'autocomplete.json')
+    .map(res => res.json());
+  }
+
   // Incluimos nosso método de search
   searchProperties(params){
 	let parameters = new URLSearchParams();

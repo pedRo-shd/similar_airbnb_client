@@ -14,6 +14,10 @@ export class PropertiesService {
 
   constructor(private http: Http, private _tokenService: Angular2TokenService) { }
 
+  getFeatured(){
+  return this.http.get(environment.api_base_url + 'featured.json')
+    .map(res => res.json());
+}
   autocomplete(){
   return this.http.get(environment.api_base_url + 'autocomplete.json')
     .map(res => res.json());

@@ -30,6 +30,7 @@ import { CommentBoxComponent } from './shared/comment-box/comment-box.component'
 import { UserDetailBoxComponent } from './shared/user-detail-box/user-detail-box.component';
 import { SendMessageComponent } from './shared/send-message/send-message.component';
 import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
+import { UsersService } from './shared/users.service';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,7 @@ import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyALOWSS_LH5z4i0JkMBZsNZD8FgeJBPWnM' }),
     Ng2AutoCompleteModule,
   ],
-  providers: [PropertiesService, Angular2TokenService],
+  providers: [PropertiesService, UsersService, Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

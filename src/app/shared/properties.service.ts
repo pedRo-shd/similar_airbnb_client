@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 // Incluimos o URLSearchParams para nos permitir passar parâmetros na chamada GET
 import { Http, URLSearchParams } from '@angular/http';
+import { Angular2TokenService, A2tUiModule} from 'angular2-token';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -11,7 +12,7 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class PropertiesService {
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private _tokenService: Angular2TokenService) { }
 
   autocomplete(){
   return this.http.get(environment.api_base_url + 'autocomplete.json')
@@ -26,6 +27,16 @@ export class PropertiesService {
 	return this.http.get(environment.api_base_url + 'search.json', {search: parameters})
   	.map(res => res.json());
   }
+
+  addToWishlist(id){
+   return this._tokenService.post('properties/' + id + '/wishlist', {})
+     .map(res => res.json());
+ }
+
+ removeToWishlist(id){
+   return this._tokenService.delete('properties/' + id + '/wishlist')
+     .map(res => res.json());
+ }
 
   getProperties(){
 	return this.http.get(environment.api_base_url + 'properties.json')

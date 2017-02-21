@@ -31,7 +31,6 @@
 
 ###M5-Auto Complete, Wishilist e Home Dinâmica
 * Incluir Auto Complete
-* Integrando a Wishlist
-* Criando o Service User
-* Incluindo Avaliação no Service Property
+* Integrando a Wishlist + Criando o Service User
+* Criando Service Reservation e incluindo avaliação
 * Preenchendo Home Dinâmica

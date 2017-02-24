@@ -34,3 +34,9 @@
 * Integrando a Wishlist + Criando o Service User
 * Criando Service Reservation e incluindo avaliação
 * Preenchendo Home Dinâmica
+
+###M6-Criando o Service Talks
+* Criando o Service Talks com os métodos para conectar ao Chat
+* Criando o component Menu
+* Criando o component Talk List + Inclusão do Pagination
+* Criando o component Talk Chat

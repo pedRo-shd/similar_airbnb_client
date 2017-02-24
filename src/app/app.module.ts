@@ -35,6 +35,7 @@ import { CommentBoxComponent } from './shared/comment-box/comment-box.component'
 import { UserDetailBoxComponent } from './shared/user-detail-box/user-detail-box.component';
 import { SendMessageComponent } from './shared/send-message/send-message.component';
 import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
+import { MenuComponent } from './shared/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
     LightboxComponent,
     CommentBoxComponent,
     UserDetailBoxComponent,
-    SendMessageComponent
+    SendMessageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

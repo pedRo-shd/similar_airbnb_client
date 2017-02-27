@@ -22,6 +22,13 @@
     <ul class="nav navbar-nav">
       <li><a href="/">AJUDA</a></li>
     </ul>
+
+    <div *ngIf="_tokenService.currentUserData != null">
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['/talks']">MENSAGENS</a></li>
+      </ul>
+    </div>
+
     <div *ngIf="_tokenService.currentUserData == null">
       <ul class="nav navbar-nav" dropdown (onToggle)="toggled($event)">
         <li><a href="/" dropdownToggle>ENTRAR</a></li>

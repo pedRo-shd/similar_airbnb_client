@@ -37,6 +37,7 @@ import { SendMessageComponent } from './shared/send-message/send-message.compone
 import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
 import { MenuComponent } from './shared/menu/menu.component';
 import { TalksListComponent } from './talks/talks-list/talks-list.component';
+import { TalksChatComponent } from './talks/talks-chat/talks-chat.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { TalksListComponent } from './talks/talks-list/talks-list.component';
     UserDetailBoxComponent,
     SendMessageComponent,
     MenuComponent,
-    TalksListComponent
+    TalksListComponent,
+    TalksChatComponent
   ],
   imports: [
     BrowserModule,

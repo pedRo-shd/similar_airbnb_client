@@ -1,5 +1,5 @@
 FROM node:6
-ENV INSTALL_PATH /onebnb-client
+ENV INSTALL_PATH /similar_airbnb_client
 RUN npm install -g angular-cli
 RUN mkdir -p $INSTALL_PATH
 WORKDIR $INSTALL_PATH
